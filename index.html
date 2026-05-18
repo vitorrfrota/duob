@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Duo B · Centro Estético</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo"><img src="images/logo.jpg" alt="DUOB" /></a>
+    <ul class="nav-links">
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#beneficios">Sobre</a></li>
+      <li><a href="#depoimentos">Depoimentos</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a href="https://wa.me/5521999999999?text=Olá!%20Gostaria%20de%20agendar%20um%20procedimento." target="_blank" class="nav-cta">Agendar ✦</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#servicos" class="mobile-link">Serviços</a>
+    <a href="#beneficios" class="mobile-link">Sobre</a>
+    <a href="#depoimentos" class="mobile-link">Depoimentos</a>
+    <a href="#contato" class="mobile-link">Contato</a>
+    <a href="https://wa.me/5521999999999?text=Olá!%20Gostaria%20de%20agendar." target="_blank" class="mobile-link" style="color:var(--gold)">✦ Agendar pelo WhatsApp</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-text">
+      <span class="hero-eyebrow">Bem-vinda ao</span>
+      <h1 class="hero-title">
+        Sua beleza,<br><em>nosso cuidado</em>
+      </h1>
+      <p class="hero-sub">
+        Procedimentos estéticos premium com tecnologia de ponta e atendimento personalizado. Realce sua beleza natural com segurança e elegância.
+      </p>
+      <div class="hero-actions">
+        <a href="https://wa.me/5521999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="btn-primary">
+          <span>💬</span> Agendar pelo WhatsApp
+        </a>
+        <a href="#servicos" class="btn-outline">Ver Serviços</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+        </div>
+  
+ <div class="hero-carousel">
+
+  <div class="hc-wrap">
+
+    <div class="hc-track" id="hcTrack">
+
+      <!-- SLIDE 1 -->
+      <div class="hc-slide active">
+        <img src="images/frente.jpg" alt="Frente da clínica" />
+
+        <div class="hc-caption">
+          <span class="hc-caption-tag">Bem-estar & estética</span>
+
+          <h2 class="hc-caption-title">
+            Um espaço pensado<br>
+            para o seu <em>cuidado</em>
+          </h2>
+
+          <p class="hc-caption-sub">
+            Ambiente sofisticado, acolhedor e preparado para proporcionar conforto desde a sua chegada.
+          </p>
+        </div>
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="hc-slide">
+        <img src="images/proced.jpg" alt="Procedimento estético" />
+
+        <div class="hc-caption">
+          <span class="hc-caption-tag">Excelência profissional</span>
+
+          <h2 class="hc-caption-title">
+            Procedimentos com<br>
+            máxima <em>precisão</em>
+          </h2>
+
+          <p class="hc-caption-sub">
+            Tecnologia, segurança e atendimento humanizado para realçar sua beleza natural.
+          </p>
+        </div>
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="hc-slide">
+        <img src="images/banhe.jpg" alt="Banheira relaxante" />
+
+        <div class="hc-caption">
+          <span class="hc-caption-tag">Momento de relaxamento</span>
+
+          <h2 class="hc-caption-title">
+            Renove suas energias<br>
+            com <em>tranquilidade</em>
+          </h2>
+
+          <p class="hc-caption-sub">
+            Um ambiente criado para aliviar o estresse e proporcionar uma experiência completa de relaxamento.
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <!-- /hc-track -->
+
+  </div>
+  <!-- /hc-wrap -->
+
+  <div class="hc-controls">
+
+    <div class="hc-progress-bar">
+      <div class="hc-progress-fill" id="hcFill"></div>
+    </div>
+
+    <div class="hc-dots" id="hcDots"></div>
+
+    <div class="hc-arrows">
+      <button class="hc-arrow" id="hcPrev" aria-label="Anterior">
+        &#8592;
+      </button>
+
+      <button class="hc-arrow" id="hcNext" aria-label="Próximo">
+        &#8594;
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos">
+    <div class="section-header reveal">
+      <span class="section-label">O que oferecemos</span>
+      <h2 class="section-title">Nossos Tratamentos</h2>
+      <div class="divider" style="margin:1rem auto 1rem;"></div>
+      <p class="section-sub">Cada procedimento é realizado com produtos selecionados e técnicas avançadas para resultados que transformam.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">🌸</div>
+        <h3>Limpeza de Pele</h3>
+        <p>Higienização profunda com extração, esfoliação e hidratação intensiva para uma pele radiante e saudável.</p>
+        <span class="service-tag">Facial</span>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon">✨</div>
+        <h3>Peeling Químico</h3>
+        <p>Renovação celular profunda que combate manchas, linhas finas e irregularidades da pele com segurança.</p>
+        <span class="service-tag">Facial</span>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon">💆</div>
+        <h3>Massagem Relaxante</h3>
+        <p>Técnicas terapêuticas que aliviam tensões, melhoram a circulação e proporcionam bem-estar profundo.</p>
+        <span class="service-tag">Corporal</span>
+      </div>
+      <div class="service-card reveal reveal-delay-4">
+        <div class="service-icon">🦋</div>
+        <h3>Design de Sobrancelhas</h3>
+        <p>Moldagem personalizada que realça seu olhar e equilibra os traços do rosto com precisão artesanal.</p>
+        <span class="service-tag">Design</span>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">💅</div>
+        <h3>Micropigmentação</h3>
+        <p>Técnica semi-permanente que define lábios, sobrancelhas e delineado com naturalidade e durabilidade.</p>
+        <span class="service-tag">Pigmentação</span>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon">🌿</div>
+        <h3>Drenagem Linfática</h3>
+        <p>Massagem específica que reduz inchaços, elimina toxinas e modela o contorno corporal com leveza.</p>
+        <span class="service-tag">Corporal</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section id="beneficios">
+    <div class="beneficios-visual reveal">
+      <div class="beneficios-circle">
+        <div class="beneficios-circle-inner">
+          <p>Por que</p>
+          <h3>Nos Escolher</h3>
+        </div>
+      </div>
+    </div>
+    <div class="beneficios-content">
+      <span class="section-label reveal">Nossos diferenciais</span>
+      <h2 class="section-title reveal">Beleza com cuidado<br><em>e excelência</em></h2>
+      <div class="divider reveal"></div>
+      <ul class="beneficios-list">
+        <li class="beneficio-item reveal reveal-delay-1">
+          <div class="beneficio-check">✓</div>
+          <div class="beneficio-text">
+            <h4>Profissionais Certificadas</h4>
+            <p>Equipe com formação técnica especializada e atualização constante nas melhores técnicas do mercado.</p>
+          </div>
+        </li>
+        <li class="beneficio-item reveal reveal-delay-2">
+          <div class="beneficio-check">✓</div>
+          <div class="beneficio-text">
+            <h4>Produtos Premium</h4>
+            <p>Utilizamos apenas marcas certificadas pela Anvisa, garantindo segurança e resultados superiores.</p>
+          </div>
+        </li>
+        <li class="beneficio-item reveal reveal-delay-3">
+          <div class="beneficio-check">✓</div>
+          <div class="beneficio-text">
+            <h4>Atendimento Personalizado</h4>
+            <p>Cada cliente recebe uma avaliação exclusiva com protocolo desenvolvido especialmente para seu perfil.</p>
+          </div>
+        </li>
+        <li class="beneficio-item reveal reveal-delay-4">
+          <div class="beneficio-check">✓</div>
+          <div class="beneficio-text">
+            <h4>Ambiente Acolhedor</h4>
+            <p>Espaço projetado para seu conforto e relaxamento, tornando cada visita uma experiência única.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos">
+    <div class="section-header reveal">
+      <span class="section-label">Clientes felizes</span>
+      <h2 class="section-title">O que dizem sobre nós</h2>
+      <div class="divider" style="margin:1rem auto;"></div>
+    </div>
+    <div class="depo-grid">
+      <div class="depo-card reveal reveal-delay-1">
+        <div class="depo-stars">★★★★★</div>
+        <p class="depo-text">"Simplesmente maravilhosa! Fiz a limpeza de pele e saí de lá com a pele completamente renovada. O atendimento é impecável e o espaço é lindo demais."</p>
+        <div class="depo-author">
+          <div class="depo-avatar">A</div>
+          <div class="depo-info">
+            <span>Ana Paula S.</span>
+            <span>Limpeza de Pele</span>
+          </div>
+        </div>
+      </div>
+      <div class="depo-card reveal reveal-delay-2">
+        <div class="depo-stars">★★★★★</div>
+        <p class="depo-text">"Fiz o design de sobrancelhas e a diferença foi incrível! A profissional entendeu exatamente o que eu queria e o resultado ficou natural e perfeito."</p>
+        <div class="depo-author">
+          <div class="depo-avatar">C</div>
+          <div class="depo-info">
+            <span>Carla M.</span>
+            <span>Design de Sobrancelhas</span>
+          </div>
+        </div>
+      </div>
+      <div class="depo-card reveal reveal-delay-3">
+        <div class="depo-stars">★★★★★</div>
+        <p class="depo-text">"A drenagem linfática foi transformadora! Depois de três sessões, o inchaço sumiu e me sinto muito mais leve. Recomendo de olhos fechados a todas!"</p>
+        <div class="depo-author">
+          <div class="depo-avatar">F</div>
+          <div class="depo-info">
+            <span>Fernanda L.</span>
+            <span>Drenagem Linfática</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="contato-info">
+      <span class="section-label reveal">Fale conosco</span>
+      <h2 class="section-title reveal">Agende sua<br><em>consulta</em></h2>
+      <div class="divider reveal"></div>
+      <p class="section-sub reveal">Estamos prontas para receber você! Entre em contato pelo formulário, pelo WhatsApp ou venha nos visitar.</p>
+      <div class="info-item reveal reveal-delay-1">
+        <div class="info-icon">📍</div>
+        <div class="info-text">
+          <span>Endereço</span>
+          <span>Rua das Flores, 123 — Nova Iguaçu, RJ</span>
+        </div>
+      </div>
+      <div class="info-item reveal reveal-delay-2">
+        <div class="info-icon">📱</div>
+        <div class="info-text">
+          <span>WhatsApp</span>
+          <span>(21) 99999-9999</span>
+        </div>
+      </div>
+      <div class="info-item reveal reveal-delay-3">
+        <div class="info-icon">🕐</div>
+        <div class="info-text">
+          <span>Horário</span>
+          <span>Seg–Sex: 9h às 19h · Sáb: 9h às 15h</span>
+        </div>
+      </div>
+      <div class="wpp-section reveal reveal-delay-4">
+        <p>Prefere falar direto por mensagem?</p>
+        <a href="https://wa.me/5521999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20Duo%20B." target="_blank" class="btn-wpp">
+          <span>💬</span> Chamar no WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-form reveal reveal-delay-2">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nome</label>
+          <input type="text" placeholder="Seu nome" />
+        </div>
+        <div class="form-group">
+          <label>Telefone</label>
+          <input type="tel" placeholder="(21) 99999-9999" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>E-mail</label>
+        <input type="email" placeholder="seu@email.com" />
+      </div>
+      <div class="form-group">
+        <label>Serviço de Interesse</label>
+        <select>
+          <option value="" disabled selected>Selecione um serviço</option>
+          <option>Limpeza de Pele</option>
+          <option>Peeling Químico</option>
+          <option>Massagem Relaxante</option>
+          <option>Design de Sobrancelhas</option>
+          <option>Micropigmentação</option>
+          <option>Drenagem Linfática</option>
+          <option>Outro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Mensagem</label>
+        <textarea placeholder="Conte um pouco sobre o que você busca..."></textarea>
+      </div>
+      <button class="btn-submit" id="submitBtn">Enviar Mensagem ✦</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+       <a href="#" class="nav-logo"><img src="images/logo.jpg" alt="DUOB" /></a>
+        <p style="margin-top:.8rem">Cuidado estético com excelência, produtos premium e atendimento personalizado. Realçando sua beleza desde 2020.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram">📸</a>
+          <a href="#" class="social-link" aria-label="Facebook">👤</a>
+          <a href="https://wa.me/5521999999999" class="social-link" aria-label="WhatsApp">💬</a>
+          <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#servicos">Limpeza de Pele</a></li>
+          <li><a href="#servicos">Peeling Químico</a></li>
+          <li><a href="#servicos">Massagem Relaxante</a></li>
+          <li><a href="#servicos">Design de Sobrancelhas</a></li>
+          <li><a href="#servicos">Micropigmentação</a></li>
+          <li><a href="#servicos">Drenagem Linfática</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#beneficios">Sobre nós</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="https://wa.me/5521999999999">Agendar</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Horários</h4>
+        <ul class="footer-hours">
+          <li><span>Segunda</span><span>9h–19h</span></li>
+          <li><span>Terça</span><span>9h–19h</span></li>
+          <li><span>Quarta</span><span>9h–19h</span></li>
+          <li><span>Quinta</span><span>9h–19h</span></li>
+          <li><span>Sexta</span><span>9h–19h</span></li>
+          <li><span>Sábado</span><span>9h–15h</span></li>
+          <li><span>Domingo</span><span>Fechado</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Duo B Centro Estético. Todos os direitos reservados.</p>
+      <p>Desenvolvido por <a href="https://nexvg.com.br" target="_blank"><img src="images/nexvg.jpg" class="logonex" alt="NEXVG" /></a></p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <div class="wpp-float">
+    <span class="wpp-float-bubble">Olá! Agende sua consulta 💜</span>
+    <a href="https://wa.me/5521999999999?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20na%20Duo%20B." target="_blank" class="wpp-float-btn" aria-label="Falar pelo WhatsApp">💬</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
